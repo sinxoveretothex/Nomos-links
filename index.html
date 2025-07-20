@@ -7,41 +7,51 @@
     <title>Séries Nomos</title>
 <style>
 :root {
-	--episode-width: 20em;
+	--series-width: 20em;
 }
-.series_box {
+.list_box {
 	display: grid;
 	width: 80wv;
-	grid-template-rows: var(--episode-width);
+	grid-template-rows: var(--series-width);
 	grid-auto-rows: 15em;
-	grid-template-columns: repeat(auto-fit, minmax(var(--episode-width), 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(var(--series-width), 1fr));
 	gap: 10px;
 }
-.episode_box {
+.series_box {
 	text-align: center;
 	display: inline-block;
-	width: var(--episode-width);
+	width: var(--series-width);
     padding: 1em;
     vertical-align: top;
 }
-.episode_title {
+.series_title {
 	font-weight: bold;
     display: block;
     width: inherit;
 }
-.episode_img {
+.series_img {
 	width: inherit;
+	min-width: var(--series-width);
 }
-.episode_link {
+.series_link {
     width: inherit;
     text-align: center;
 }
 </style>
-  </head>
+</head>
 <body>
 	<h1>Séries</h1>
-	<ul>
-		<li><a href="acd.html">Alexandre Cormier-Denis (directs)</a></li>
-	</ul>
+	<div class="series_box">
+		<a class="series_link" href="">
+			<img class="series_img" src="acd.png"/>
+		</a>
+		<a class="series_title" href="acd.html">Alexandre Cormier-Denis (directs)</a>
+	</div>
+	<div class="series_box">
+		<a class="series_link" href="">
+			<img class="series_img" src="cult_et_soc.jpg"/>
+		</a>
+		<a class="series_title" href="cult_et_soc.html">Culture & Société</a>
+	</div>
 </body>
 </html>
