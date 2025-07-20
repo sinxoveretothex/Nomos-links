@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr-CA" dir="ltr"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'none'; object-src 'none'; script-src resource: chrome:; connect-src https:; img-src https: data: blob: chrome:; style-src 'unsafe-inline';">
+    <meta name="color-scheme" content="light dark">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Séries Nomos</title>
+<style>
+:root {
+	--episode-width: 20em;
+}
+.series_box {
+	display: grid;
+	width: 80wv;
+	grid-template-rows: var(--episode-width);
+	grid-auto-rows: 15em;
+	grid-template-columns: repeat(auto-fit, minmax(var(--episode-width), 1fr));
+	gap: 10px;
+}
+.episode_box {
+	text-align: center;
+	display: inline-block;
+	width: var(--episode-width);
+    padding: 1em;
+    vertical-align: top;
+}
+.episode_title {
+	font-weight: bold;
+    display: block;
+    width: inherit;
+}
+.episode_img {
+	width: inherit;
+}
+.episode_link {
+    width: inherit;
+    text-align: center;
+}
+</style>
+  </head>
+<body>
+	<a href="acd.html"><h1>Alexandre Cormier-Denis</h1></a>
+</body>
+</html>
